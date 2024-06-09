@@ -28,7 +28,6 @@ public class LoginPopup : MonoBehaviour
     private void Start()
     {
         SetDefaultNetworkAddress();
-        CheckNatworkAddressValidOnUpdate();
     }
 
     private void OnEnable()
@@ -43,7 +42,7 @@ public class LoginPopup : MonoBehaviour
 
     private void Update()
     {
-   
+        CheckNatworkAddressValidOnUpdate();
     }
 
     private void SetDefaultNetworkAddress()
@@ -105,7 +104,6 @@ public class LoginPopup : MonoBehaviour
         _netManager.StartHost();
         this.gameObject.SetActive(false);
     }
-
 
     public void OnClick_StartAsClient()
     {
