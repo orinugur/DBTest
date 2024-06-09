@@ -49,8 +49,6 @@ public class DatabaseUI : MonoBehaviour
             sqlCommand.Connection = _dbConnection;
             sqlCommand.CommandText = query;
 
-
-
             _dbConnection.Open();
             sqlCommand.ExecuteNonQuery();
             _dbConnection.Close();
@@ -139,6 +137,10 @@ public class DatabaseUI : MonoBehaviour
         SendQuery(query, "user_info");
         
     }
+
+  
+    
+
 
     public void OnClick_OpenDatabaseUI()
     {
